@@ -1,2 +1,9 @@
 <%= notice %>
 <%= link_to t('.new'), new_student_path %>
+
+<% @students.each do |student| %>
+
+  <%= student.name %>
+  <%= link_to t('.edit'), edit_student_path(student) %>
+
+<% end %>

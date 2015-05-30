@@ -5,8 +5,11 @@ pt-BR:
   students:
     index:
       new: Cadastrar novo
+      edit: Editar
     create:
       success: Estudante criado com sucesso!
+    update:
+      success: Estudante atualizado com sucesso!
   activerecord:
     models:
       student: Estudante
