@@ -1,0 +1,15 @@
+<% @student.errors.full_messages.each do |full_message| %>
+  <%= full_message %>
+<% end %>
+
+<%= form_for @student do |f| %>
+  
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :register_number %>
+  <%= f.text_field :register_number %>
+
+  <%= f.submit %>
+
+<% end %>

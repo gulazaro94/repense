@@ -1,0 +1,17 @@
+pt-BR:
+  layouts:
+    menu:
+      students: Estudantes
+  students:
+    index:
+      new: Cadastrar novo
+    create:
+      success: Estudante criado com sucesso!
+  activerecord:
+    models:
+      student: Estudante
+    attributes:
+      student:
+        name: Nome
+        register_number: Numero de registro
+
