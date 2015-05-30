@@ -1,0 +1,33 @@
+<%= notice %>
+
+<h1><%= t('.list_title') %></h1>
+
+<br>
+
+<%= link_to t('.new'), new_course_path, class: 'btn btn-primary btn-lg' %>
+
+<br>
+<br>
+<br>
+
+<div class="panel panel-default">
+  <table class="table">
+      <thead>
+        <tr>
+          <th><%= t_attr(:course, :name) %></th>
+          <th><%= t_attr(:course, :description) %></th>
+          <th></th>
+        </tr>
+      </thead>
+      <% @courses.each do |course| %>
+
+        <tr>
+          <td><%= course.name %></td>
+          <td><%= course.description %></td>
+          <td><%= link_to t('.edit'), edit_course_path(course), class: 'btn btn-default' %></td>
+        </tr>
+
+    <% end %>
+  </table>
+
+</div>

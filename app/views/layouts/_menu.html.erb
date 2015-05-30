@@ -1,1 +1,13 @@
-<%= link_to t('.students'), students_path %>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <%= link_to 'Repense', root_path, class: 'navbar-brand' %>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to t('.students'), students_path %></li>
+        <li><%= link_to t('.courses'), courses_path %></li>
+      </ul>
+    </div>
+  </div>
+</nav>

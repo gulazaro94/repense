@@ -1,0 +1,25 @@
+<h1><%= @student.name %> - <%= t('.list_title') %></h1>
+
+<br>
+
+<div class="panel panel-default">
+  <table class="table">
+      <thead>
+        <tr>
+          <th><%= t_attr(:classroom, :course) %></th>
+          <th><%= t_attr(:classroom, :entry_at) %></th>
+          <th></th>
+        </tr>
+      </thead>
+      <% @classrooms.each do |classroom| %>
+
+        <tr>
+          <td><%= classroom.course.name %></td>
+          <td><%= link_to t('.edit'), edit_student_classroom_path(@student, classroom), class: 'btn btn-default' %></td>
+        </tr>
+    <% end %>
+  </table>
+
+</div>
+
+<%= back_button %>

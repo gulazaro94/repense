@@ -1,20 +1,75 @@
 pt-BR:
+
+  application:
+    label:
+      back: Voltar
+
   layouts:
     menu:
       students: Estudantes
+      courses: Cursos
+
   students:
+    new:
+      title: Novo estudante
+    edit:
+      title: Editar estudantes
     index:
       new: Cadastrar novo
       edit: Editar
+      apply: Matricular
+      classrooms: Matriculas
+      list_title: Listagem de estudantes
     create:
       success: Estudante criado com sucesso!
     update:
       success: Estudante atualizado com sucesso!
+
+  courses:
+    new:
+      title: Novo curso
+    edit:
+      title: Editar curso
+    index:
+      new: Cadastrar novo
+      edit: Editar
+      list_title: Listagem de cursos
+    create:
+      success: Curso criado com sucesso!
+    update:
+      success: Curso atualizado com sucesso!
+
+  classrooms:
+    new:
+      title: Nova matricula
+    edit:
+      title: Editar matricula
+    form:
+      select_course_prompt: Selecione um curso
+    create:
+      success: Matricula efetuada com sucesso!
+    index:
+      edit: Editar
+      list_title: Matriculas
+    update:
+      success: Matricula atualizada com sucesso
+
+
   activerecord:
     models:
       student: Estudante
+      course: Curso
+      classroom: Matricula
     attributes:
       student:
         name: Nome
         register_number: Numero de registro
+      course:
+        name: Nome
+        description: Descrição
+      classroom:
+        course: Curso
+        student: Estudante
+        student_id: Estudante
+        entry_at: Regitrado em
 
